@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Gake ❤️</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--pink:#ff4267;--soft:#ffb1c1;--bg:#09090f;--text:#f8f5fb}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Arial,sans-serif;line-height:1.6}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 7%;border-bottom:1px solid #ffffff18;background:#09090fee;position:sticky;top:0;z-index:5}
+.brand{font-family:cursive;font-size:1.25rem}.brand span{color:var(--pink)}
+nav a{color:#eee;text-decoration:none;margin-left:18px;font-size:.9rem}
+.hero{min-height:76vh;display:flex;align-items:center;padding:70px 9%;background:linear-gradient(90deg,#09090ff5 0%,#09090fb8 48%,#09090f20 100%),url('gake.jpg') center/cover}
+.hero-content{max-width:560px}
+.eyebrow{letter-spacing:4px;color:var(--soft);font-size:.8rem}
+h1{font-family:Georgia,serif;font-size:clamp(3rem,8vw,6rem);line-height:1.05;margin:18px 0}
+h1 span{color:var(--pink);font-style:italic}
+p{color:#dedbe6}
+.hero p{max-width:460px;margin-bottom:25px}
+.btn{display:inline-block;background:var(--pink);color:white;text-decoration:none;border:0;border-radius:30px;padding:13px 23px;font-weight:bold;cursor:pointer;box-shadow:0 8px 30px #ff426733}
+section{padding:65px 8%;text-align:center}
+h2{font:italic 2.3rem Georgia,serif;margin-bottom:18px}
+h2 span{color:var(--pink)}
+.message{max-width:720px;margin:0 auto 35px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}
+.card{padding:25px 15px;border:1px solid #ffffff1c;border-radius:15px;background:#ffffff05}
+.icon{font-size:2rem;color:var(--pink)}
+.card h3{font:italic 1.3rem Georgia,serif;margin:8px 0}
+.card p{font-size:.9rem}
+.letter{max-width:650px;margin:25px auto 0;padding:25px;border:1px solid #ff42674a;border-radius:16px;background:#ff42670c;display:none}
+.letter.show{display:block;animation:pop .5s ease}
+footer{text-align:center;padding:35px 15px;background:#06060a;border-top:1px solid #ffffff12}
+footer h2{margin:8px 0}
+.small{font-size:.8rem;color:#aaa}
+.heart{position:fixed;bottom:-30px;color:var(--pink);pointer-events:none;animation:float 6s linear forwards;z-index:9}
+@keyframes float{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){nav{padding:15px 5%}nav a{margin-left:9px;font-size:.78rem}.brand{font-size:1rem}.hero{min-height:70vh;padding:55px 7%;background-position:60% center}.cards{grid-template-columns:repeat(2,1fr)}section{padding:50px 6%}}
+@media(max-width:420px){nav a{margin-left:7px;font-size:.7rem}.brand{font-size:.9rem}.cards{gap:10px}.card{padding:18px 10px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="brand">♡ Happy Birthday Gake <span>♥</span></div>
+  <div><a href="#home">Home</a><a href="#message">My Message</a><a href="#wishes">Wishes</a></div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">IT'S YOUR SPECIAL DAY ♡</div>
+    <h1>Happy Birthday,<br><span>Gake ♡</span></h1>
+    <p>Another year, another chapter, and another reason to celebrate the amazing person you are. Your smile makes my days brighter, and I'm so grateful to have you in my life.</p>
+    <a class="btn" href="#message">A little surprise for you ♥ ↓</a>
+  </div>
+</header>
+
+<section id="message">
+  <h2>A Few Words <span>For You</span></h2>
+  <div class="message">
+    <p>My love, may this new year of your life bring you closer to your dreams. May you keep growing, smiling, and becoming everything you've always wanted to be. You deserve happiness, peace, success, and all the beautiful things life has to offer.</p>
+    <p style="margin-top:14px">Thank you for being you, for being part of my life, and for giving me more reasons to smile. Today is all about celebrating YOU. Happy birthday, my girl. I love you, Gake! ❤️</p>
+    <button class="btn" style="margin-top:25px" onclick="revealLetter()">Open your birthday letter 💌</button>
+    <div class="letter" id="letter">
+      <h2>To my birthday girl, <span>Gake</span> ❤️</h2>
+      <p>Today is your day, and I hope you feel as special as you truly are. No website or message could ever say everything I wish for you, but I hope this little surprise reminds you that you are loved and appreciated. Keep chasing your dreams, keep being yourself, and never forget how much you mean to me. Here's to more memories, laughter, and beautiful moments together. Happy birthday, my love! 💗</p>
+      <p style="margin-top:15px;font-family:Georgia,serif;font-style:italic">Forever cheering for you, always ❤️</p>
+    </div>
+  </div>
+</section>
+
+<section id="wishes">
+  <h2>My Birthday <span>Wishes</span></h2>
+  <div class="cards">
+    <div class="card"><div class="icon">♡</div><h3>More Happiness</h3><p>May your days be filled with joy and laughter.</p></div>
+    <div class="card"><div class="icon">☆</div><h3>Big Dreams</h3><p>May you achieve everything your heart wishes for.</p></div>
+    <div class="card"><div class="icon">☻</div><h3>Good Health</h3><p>May you always be safe, strong, and well.</p></div>
+    <div class="card"><div class="icon">∞</div><h3>More Memories</h3><p>Here's to more beautiful moments together.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="eyebrow">YOUR DAY • YOUR YEAR • YOUR MOMENT</div>
+  <h2>20 October <span>♥</span></h2>
+  <p>Happy birthday to my favourite person.</p>
+  <p style="font-family:Georgia,serif;font-style:italic;margin-top:12px">Thank you for existing, Gake ♡</p>
+  <div class="small" style="margin-top:20px">Made with love, just for you ❤️</div>
+</footer>
+
+<script>
+function revealLetter(){
+  const letter=document.getElementById('letter');
+  letter.classList.add('show');
+  letter.scrollIntoView({behavior:'smooth',block:'center'});
+  for(let i=0;i<18;i++){
+    setTimeout(()=>{
+      const heart=document.createElement('div');
+      heart.className='heart';
+      heart.textContent=['♥','♡','💗','💕'][Math.floor(Math.random()*4)];
+      heart.style.left=Math.random()*100+'vw';
+      heart.style.fontSize=(16+Math.random()*20)+'px';
+      heart.style.animationDuration=(4+Math.random()*3)+'s';
+      document.body.appendChild(heart);
+      setTimeout(()=>heart.remove(),7000);
+    },i*100);
+  }
+}
+</script>
+</body>
+</html>
